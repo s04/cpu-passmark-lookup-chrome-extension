@@ -14,7 +14,9 @@ Simple extension to lookup a CPUs Passmark via highlight -> Right Click -> Looku
 
 Highlight a CPU name in your browser anywhere e.g.: "Intel Core i5-13500" and right click -> "Lookup CPU Information"
 
-You should recieve a popup.
+You should receive a popup/alert giving you the CPU information.
+
+![Preview](images/alert_preview.png)
 
 ## Updating CPU information
 

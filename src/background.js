@@ -28,10 +28,10 @@ async function fetchCPUData(cpuName, tabId) {
         let message = '';
 
         if (cpuInfoPassMark) {
-            message += `CPU Name: ${cpuInfoPassMark['CPU Name']}\nCPU Mark: ${cpuInfoPassMark['CPU Mark']}\nRank: ${cpuInfoPassMark['Rank']}\nCPU Value: ${cpuInfoPassMark['CPU Value']}\nPrice: ${cpuInfoPassMark['Price(USD)']}`;
+            message += `CPU Name: ${cpuInfoPassMark['CPU Name']}\nCPU Mark: ${cpuInfoPassMark['CPU Mark']}\nRank: ${cpuInfoPassMark['Rank']}\nCPU Value: ${cpuInfoPassMark['CPU Value']}\nPrice: ${cpuInfoPassMark['Price(USD)']}\n\n`;
         }
         if (cpuInfoUserBenchmark) {
-            message += `Model: ${cpuInfoUserBenchmark.Model}\nRank: ${cpuInfoUserBenchmark.Rank}\nBenchmark: ${cpuInfoUserBenchmark.Benchmark}\nMore Info: ${cpuInfoUserBenchmark.URL}\n\n`;
+            message += `Model: ${cpuInfoUserBenchmark.Model}\nRank: ${cpuInfoUserBenchmark.Rank}\nBenchmark: ${cpuInfoUserBenchmark.Benchmark}\nMore Info: ${cpuInfoUserBenchmark.URL}`;
         }
         if (!cpuInfoUserBenchmark && !cpuInfoPassMark) {
             message = "No information found for selected CPU.";
